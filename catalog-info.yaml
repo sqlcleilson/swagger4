@@ -1,0 +1,23 @@
+
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: "swagger4"
+  description: "testing swagger"
+  links:
+    - url: https://api-swagger4-anderson-dev.empcbr.thoughtworks-labs.net/swagger-ui.html
+      title: swagger4
+      icon: dashboard
+  annotations:
+    circleci.com/project-slug: github/platform-dx/swagger4
+    backstage.io/techdocs-ref: dir:.
+    github.com/project-slug:  platform-dx/swagger4
+    sonarqube.org/project-key: "swagger4"
+    backstage.io/kubernetes-label-selector: "app=swagger4"
+    backstage.io/adr-location: docs/adrs/
+spec:
+  type: service
+  lifecycle: experimental
+  owner: "anderson"
+  providesApis:
+    - "swagger4"

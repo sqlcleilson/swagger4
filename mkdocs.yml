@@ -1,0 +1,9 @@
+
+site_name: "swagger4"
+site_description: "testing swagger"
+
+nav:
+  - Introduction: index.md
+
+plugins:
+  - techdocs-core
